@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
-batsman=pd.read_excel(r'https://github.com/akpythonyt/dataanalyticsapp/blob/main/Top_100_batsman.xlsx')
+batsman=pd.read_excel(r'https://github.com/akpythonyt/dataanalyticsapp/blob/main/Top_100_batsman.xlsx%20-%20Sheet1.csv')
 st.title('IPL analytics 2008- 2019')
 st.title('Batsman KPIs')
 Batsman_matches = batsman[batsman['Runs']>3000]
