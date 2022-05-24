@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
-batsman=pd.read_excel(r'https://github.com/akpythonyt/dataanalyticsapp/blob/main/Top_100_batsman.xlsx%20-%20Sheet1.csv')
+batsman=pd.read_excel(r'https://github.com/akpythonyt/dataanalyticsapp/blob/main/Top_100_batsman.csv')
 st.title('IPL analytics 2008- 2019')
 st.title('Batsman KPIs')
 Batsman_matches = batsman[batsman['Runs']>3000]
@@ -55,7 +55,7 @@ fig1 = go.Figure(data=[go.Scatter(
 )])
 st.plotly_chart(fig1)
 st.title('Top 5 Bowlers Based on wickets')
-Bowlers=pd.read_excel(r'https://github.com/akpythonyt/dataanalyticsapp/blob/main/Top_100_bowlers.xlsx%20-%20Sheet1.csv')
+Bowlers=pd.read_excel(r'https://github.com/akpythonyt/dataanalyticsapp/blob/main/Top_100_bowlers.csv')
 Bowlers_matches = Bowlers[Bowlers['Wkts']>1]
 topfive=(Bowlers_matches['PLAYER'].iloc[0:5])
 fig2 = go.Figure()
