@@ -18,7 +18,7 @@ fig6.add_trace(go.Scatter(x=topfive, y=(batsman['Runs'].iloc[0:5]),
                     name='lines+markers'))
 st.plotly_chart(fig6)
 
-Matches=pd.read_csv('https://raw.githubusercontent.com/akpythonyt/Datasets/main/matches.csv'')
+Matches=pd.read_csv('https://raw.githubusercontent.com/akpythonyt/Datasets/main/matches.csv')
 bat=Matches['toss_winner'].loc[Matches['toss_decision']=='bat']
 battoss=(bat.value_counts())
 st.title('Teams chose batting when they won toss')
